@@ -1,3 +1,67 @@
-body {
-  background-color: red;
+#mymusic-page {
+  height: 100%;
+}
+
+#mymusic-page .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-notification {
+  height: 33px;
+  background-color: #9b4de0;
+  text-align: center;
+  color: #fff;
+}
+
+.page-notification .logo {
+
+}
+
+.page-notification .text {
+  line-height: 33px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* page-content */
+.page-content {
+  flex: 1;
+}
+
+.page-content .wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.page-content .content-left-sidebar {
+  background-color: #f00;
+  flex: 0 0 235px;
+  max-width: 235px;
+  height: 100%;
+}
+
+.page-content .content-main {
+  background-color: yellow;
+  flex: 1;
+  height: 100%;
+}
+
+.page-content .content-right-sidebar {
+  background-color: blue;
+  flex: 0 0 326px;
+  max-width: 326px;
+  height: 100%;
+}
+
+.left-sidebar-wrapper {
+  height: 100%;
+}
+
+.left-sidebar-wrapper .site-logo {
+  width: 120px;
+  height: 40px;
+  background: var(--img-logo-mp3) 50%/contain no-repeat;
 }
