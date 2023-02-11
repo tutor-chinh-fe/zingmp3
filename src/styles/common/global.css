@@ -22,3 +22,15 @@ figure {
   margin: 0px;
   padding-left: 10px;
 }
+.active {
+  color: #fff !important;
+}
+.fs17 {
+  font-size: 17px !important;
+}
+input {
+  color: #fff;
+}
+input:focus {
+  color: #fff;
+}
