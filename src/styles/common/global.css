@@ -41,7 +41,7 @@ input:focus {
 ::placeholder {
   color:#fff;
 }
-::-webkit-scrollbar {
+.sidebar-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
