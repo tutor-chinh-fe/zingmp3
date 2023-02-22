@@ -8,7 +8,7 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-a {
+/* a {
   color: #dadada;
 }
 a:hover {
@@ -29,9 +29,7 @@ button {
   border: none;
   outline: none;
 }
-.fs17 {
-  font-size: 17px !important;
-}
+
 input {
   color: #fff;
 }
@@ -62,4 +60,17 @@ input:focus {
 }
 .active-item {
   color: #fff !important;
+} */
+a:hover {
+  text-decoration: none;
+}
+.mar-r-10 {
+  margin-right: 10px;
+}
+button {
+  outline: none;
+  border:  none;
+}
+.fs17 {
+  font-size: 17px !important;
 }
