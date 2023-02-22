@@ -11,7 +11,7 @@
   width: 240px;
   background-color: hsla(0,0%,100%,0.05);
   height: 100%;
-  padding-bottom: 54px;
+  padding-bottom: 60px;
   overflow: hidden;
 }
 .content-main {
@@ -19,8 +19,11 @@
 }
 .left-wrapper {
   display: flex;
-  flex-direction: column;
   height: 100%;
+}
+.logo-navigation {
+  display: flex;
+  flex-direction: column;
 }
 .content-left-sidebar .main-logo {
   width: 240px;
@@ -38,6 +41,20 @@
 .content-left-sidebar .nav-main .nav-top {
   position: relative;
   margin-bottom: 15px;
+}
+.content-left-sidebar .nav-main .nav-top .title1 {
+  padding: 8px 25px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+.content-left-sidebar .nav-main .nav-top .none-icon {
+  cursor: pointer;
+}
+.content-left-sidebar .nav-main .nav-top .none-icon i {
+  font-size: 12px;
 }
 .content-left-sidebar .nav-main li {
   background-color: hsla(0,0%,100%,0.1);
@@ -89,6 +106,14 @@
   left: 25px;
   right: 25px;
   top: 0;
+}
+.scrollbar-wrapper {
+  width: 100%;
+    /* height: 88%; */
+    position: relative;
+    /* height: 100%; */
+    height: calc(100% - 208px);
+    overflow: hidden;
 }
 .scrollbar {
   position: absolute;
@@ -523,7 +548,13 @@ input:focus {
   height: 34px;
   display: none;
   transform: translateY(-50%);
-  top: 50%;
+  top: 55%;
+  left: 0px;
+  align-items: center;
+  justify-content: center;
+}
+.content-main .bottom-section .select-item:hover .check-box-wrapper {
+  display: flex;
 }
 .content-main .bottom-section .select-item .check-box {
   justify-content: center;
@@ -532,11 +563,28 @@ input:focus {
    position: relative;
 }
 .content-main .bottom-section .select-item .check-box input {
-  border-color: hsla(0,0%,100%,0.2);
+  border-color:  hsla(0,0%,100%,0.2);
   border-radius: 3px;
   margin: 0;
   padding: 6px;
+  border: 1px solid #a0a0a0;
 }
+.content-main .bottom-section .select-item .check-box input:checked {
+  background-color: hsla(0,0%,100%,0.15);
+}
+/* .content-main .bottom-section .select-item .check-box input:checked::after {
+  content: " ";
+  border-left-color: #fff;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-top-color: #fff;
+  height: 47%;
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-63%) rotate(45deg);
+} */
 .content-main .bottom-section .select-item .list-item {
   max-width: 100%;
   flex-grow: 1;
@@ -590,35 +638,49 @@ input:focus {
   width: 100%;
 }
 .content-main .bottom-section .select-item .list-item .media-left .card-info .title {
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
 }
 .content-main .bottom-section .select-item .list-item .media-left .card-info .subtitle {
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 3px;
 }
 .content-main .bottom-section .select-item .list-item .media-left .card-info .subtitle a {
   color:  hsla(0,0%,100%,0.5);
 }
+.content-main .bottom-section .select-item .list-item .media-left .card-info .subtitle a:hover {
+  text-decoration: underline;
+  color: #9b4de0;
+}
 .content-main .bottom-section .select-item .list-item .media-center .album-info {
   color:  hsla(0,0%,100%,0.5);
   font-size: 12px;
 }
+.content-main .bottom-section .select-item .list-item .media-center .album-info span:hover {
+  text-decoration: underline;
+  color: #9b4de0;
+}
 .content-main .bottom-section .select-item .list-item .media-right .hover-items {
   display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-/* .content-main .bottom-section .select-item .list-item:hover .hover-items {
+.content-main .bottom-section .select-item .list-item:hover .hover-items {
   display: block;
 }
 .content-main .bottom-section .select-item .list-item:hover .action-items {
-  display: none;
-} */
+  visibility: hidden;
+}
+.content-main .bottom-section .select-item:hover .song-icon {
+ visibility: hidden;
+}
 .content-main .bottom-section .select-item .list-item:hover {
   background-color: hsla(0,0%,100%,0.15);
   border-radius: 4px;
 }
 .content-main .bottom-section .select-item .list-item .media-right {
-  overflow: hidden;
+  position: relative;
 }
 .content-main .bottom-section .select-item .list-item .media-right .level {
   display: flex;
